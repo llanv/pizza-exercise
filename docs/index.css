@@ -1,5 +1,6 @@
 :root {
     --primary-color: #74d6f5;
+    --primary-50-color: #b3e4f3;
     --secondary-color: #f08080;
     --tertiary-color: #90dc5e;
     --surface-color: #ffffff;
@@ -160,6 +161,17 @@ nav {
     width: 231px;
     height: 312px;
     background-color: var(--surface-color);
+    filter: drop-shadow(0px 5px 4px #acabab);
+}
+
+.pizza-add-card {
+    width: 231px;
+    height: 312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #acabab;
+    background-color: var(--primary-50-color);
     filter: drop-shadow(0px 5px 4px #acabab);
 }
 
