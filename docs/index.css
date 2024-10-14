@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #74d6f5;
+    --secondary-color: #f08080;
+    --tertiary-color: #90dc5e;
+    --surface-color: #ffffff;
+    --base-color: #f2f1f1;
+    --text-color: #000000;
+    --system-color: #d9d9d9;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    background-color: var(--base-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--system-color);
+    height: 112px;
+    width: 100%;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+    gap: 31px;
+    margin-top: 31px;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-name {
+    font-family: "Anonymous Pro", monospace;
+    font-size: 24px;
+}
+
+.welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-image {
+    border-radius: 100%;
+    border: 6px solid var(--secondary-color);
+}
+
+.profile-account {
+    width: 169px;
+    height: 43px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 20px;
+}
+
+.edit {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #acabab;
+}
+
+.edit > div {
+    background-color: var(--system-color);
+    width: 30px;
+    height: 5px;
+}
+
+.divider {
+    height: 5px;
+    width: 100%;
+    background-color: var(--system-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--system-color);
+    height: 62px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.controls > div {
+    width: 33%;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 21px;
+}
+
+.search-bar {
+    border: none;
+    border-radius: 10px;
+    height: 36px;
+    width: 300px;
+    font-size: 17px;
+    padding-left: 30px;
+}
+
+.search-container {
+    justify-content: center;
+    display: flex;
+}
+
+.search-bar-container {
+    position: relative;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    color: #acabab;
+}
+
+.add-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 21px;
+}
+
+.add-button {
+    border: none;
+    height: 43px;
+    width: 106px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pizza-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    width: 100%;
+}
+
+.pizza-card {
+    width: 209px;
+    height: 283px;
+    background-color: var(--surface-color);
+    filter: drop-shadow(0px 5px 4px #acabab);
+}
+
+.pizza-card-image {
+}
+
+.pizza-card-title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.trash-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px;
+}

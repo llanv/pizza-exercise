@@ -1,0 +1,29 @@
+:root {
+    --primary-50-color: #b3e4f3;
+}
+
+.switch {
+    display: flex;
+    width: 355px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: var(--primary-50-color);
+}
+
+.switch > button {
+    flex-grow: 1;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pizza-switch {
+    background-color: var(--primary-color);
+}
+
+.topping-switch {
+    background-color: var(--primary-50-color);
+    color: #5a727a;
+}
