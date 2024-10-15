@@ -23,7 +23,7 @@
 
     <body>
         <nav>
-            <div class="nav-section">
+            <div class="nav-section pointer">
                 <img
                     src="images/slice_wise_logo.png"
                     width="94px"
@@ -36,14 +36,14 @@
                 <p class="welcome-message">Good Afternoon, Evee!</b>
             </div>
 
-            <div class="nav-section">
+            <div class="nav-section pointer">
                 <img
                     class="profile-image"
                     src="images/evee.png"
                     width=" 67px"
                     height="67px"
                 />
-                <button class="profile-account">
+                <button class="profile-account pointer">
                     Evee <i class="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
@@ -65,8 +65,10 @@
             
             <div class="controls">
                 <div class="filter-container">
-                    <i class="fa-solid fa-filter fa-lg"></i>
-                    <div>Filters</div>
+                    <div class="filter-button">
+                        <i class="fa-solid fa-filter fa-lg"></i>
+                        <div>Filters</div>    
+                    </div>
                 </div>
                 <div class="search-container">
                     <div class="search-bar-container">
@@ -82,55 +84,67 @@
             <div class="pizza-cards">
                 <div class="pizza-card">
                     <i class="fa-solid fa-trash trash-icon"></i>
-                    <img class="pizza-card-image" src="images/pepperoni_pizza.png" width="231px" height="220px">
-                    <div class="pizza-card-title">
-                        <p>Pepperoni Paradise</p>
+                    <div class="pizza-card-contents">
+                        <img src="images/pepperoni_pizza.png" width="231px" height="220px">
+                        <div class="pizza-card-title">
+                            <p>Pepperoni Paradise</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="pizza-card">
                     <i class="fa-solid fa-trash trash-icon"></i>
-                    <img class="pizza-card-image" src="images/four_cheese_pizza.png" width="231px" height="220px">
-                    <div class="pizza-card-title">
-                        <p>Four Cheese Heaven</p>
+                    <div class="pizza-card-contents">
+                        <img src="images/four_cheese_pizza.png" width="231px" height="220px">
+                        <div class="pizza-card-title">
+                            <p>Four Cheese Heaven</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="pizza-card">
                     <i class="fa-solid fa-trash trash-icon"></i>
-                    <img class="pizza-card-image" src="images/marinara_madness_pizza.png" width="231px" height="220px">
-                    <div class="pizza-card-title">
-                        <p>Marinara Madness</p>
+                    <div class="pizza-card-contents">
+                        <img src="images/marinara_madness_pizza.png" width="231px" height="220px">
+                        <div class="pizza-card-title">
+                            <p>Marinara Madness</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="pizza-card">
                     <i class="fa-solid fa-trash trash-icon"></i>
-                    <img class="pizza-card-image" src="images/queen_margharita_pizza.png" width="231px" height="220px">
-                    <div class="pizza-card-title">
-                        <p>Queen Margherita</p>
+                    <div class="pizza-card-contents">
+                        <img src="images/queen_margharita_pizza.png" width="231px" height="220px">
+                        <div class="pizza-card-title">
+                            <p>Queen Margherita</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="pizza-card">
                     <i class="fa-solid fa-trash trash-icon"></i>
-                    <img class="pizza-card-image" src="images/hawaiian_bliss_pizza.png" width="231px" height="220px">
-                    <div class="pizza-card-title">
-                        <p>Hawaiian Bliss</p>
+                    <div class="pizza-card-contents">
+                        <img src="images/hawaiian_bliss_pizza.png" width="231px" height="220px">
+                        <div class="pizza-card-title">
+                            <p>Hawaiian Bliss</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="pizza-card">
-                    <i class="fa-solid fa-trash trash-icon"></i>
-                    <img class="pizza-card-image" src="images/bbq_pizza.png" width="231px" height="220px">
-                    <div class="pizza-card-title">
-                        <p>Meat Lover’s Dream</p>
+                    <i class="fa-solid fa-trash trash-icon"  onclick="event.stopPropagation();"></i>
+                    <div class="pizza-card-contents">
+                        <img src="images/bbq_pizza.png" width="231px" height="220px">
+                        <div class="pizza-card-title">
+                            <p>Meat Lover’s Dream</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="pizza-add-card">
+                <button class="pizza-add-card">
                     + Add
-                </div>
+                </button>
             </div>
         </div>
     </body>

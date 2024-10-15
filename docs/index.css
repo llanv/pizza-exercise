@@ -44,6 +44,10 @@ nav {
     gap: 20px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .logo-name {
     font-family: "Anonymous Pro", monospace;
     font-size: 24px;
@@ -104,9 +108,25 @@ nav {
 
 .filter-container {
     display: flex;
+    margin-left: 21px;
+}
+
+.filter-button {
+    display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 21px;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 10px;
+}
+
+.filter-button:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+}
+
+.filter-button:active {
+    background-color: #cac9c9;
 }
 
 .search-bar {
@@ -148,6 +168,16 @@ nav {
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+}
+
+.add-button:active {
+    background-color: #6cc5e1;
 }
 
 .pizza-cards {
@@ -162,6 +192,19 @@ nav {
     height: 312px;
     background-color: var(--surface-color);
     filter: drop-shadow(0px 5px 4px #acabab);
+    cursor: pointer;
+}
+
+.pizza-card:hover {
+    transform: scale(1.02);
+    transition: 0.1s ease-in-out;
+}
+
+.pizza-card-contents {
+}
+
+.pizza-card-contents:active {
+    opacity: 70%;
 }
 
 .pizza-add-card {
@@ -171,11 +214,21 @@ nav {
     align-items: center;
     justify-content: center;
     border: 2px dashed #acabab;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5a727a;
+    cursor: pointer;
     background-color: var(--primary-50-color);
     filter: drop-shadow(0px 5px 4px #acabab);
 }
 
-.pizza-card-image {
+.pizza-add-card:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.02);
+}
+
+.pizza-add-card:active {
+    background-color: #9edef1;
 }
 
 .pizza-card-title {
@@ -193,4 +246,15 @@ nav {
     border: 5px solid #ffffff;
     background-color: #ffffff;
     border-radius: 10px;
+    z-index: 100;
+}
+
+.trash-icon:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+.trash-icon:active {
+    color: red;
 }

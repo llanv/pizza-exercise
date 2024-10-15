@@ -17,9 +17,31 @@
 
 .pizza-switch {
     background-color: var(--primary-color);
+    cursor: pointer;
+    z-index: 2;
 }
 
 .topping-switch {
     background-color: var(--primary-50-color);
     color: #5a727a;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pizza-switch:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+}
+
+.pizza-switch:active {
+    background-color: #6cc5e1;
+}
+
+.topping-switch:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+}
+
+.topping-switch:active {
+    background-color: #9edef1;
 }
