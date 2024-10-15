@@ -33,7 +33,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1280px;
+    max-width: 1280px;
+    padding: 50px;
     gap: 31px;
     margin-top: 31px;
 }
@@ -46,8 +47,9 @@ nav {
 }
 
 .logo-section {
+    margin-left: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     cursor: pointer;
 }
 
@@ -57,8 +59,9 @@ nav {
 }
 
 .profile-section {
+    margin-right: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     cursor: pointer;
 }
 
@@ -203,6 +206,12 @@ nav {
     flex-wrap: wrap;
     gap: 31px;
     width: 100%;
+}
+
+@media only screen and (max-width: 1380px) {
+    .pizza-cards {
+        justify-content: center;
+    }
 }
 
 .pizza-card {
