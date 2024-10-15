@@ -13,10 +13,29 @@
     font-family: "Roboto", sans-serif;
 }
 
-body {
+.desktop {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.mobile {
+    width: 100;
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+body {
     margin: 0px;
     background-color: var(--base-color);
 }
@@ -36,6 +55,15 @@ body {
     max-width: 1280px;
     padding: 50px;
     gap: 31px;
+}
+
+.mobile-content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 31px;
+    padding-top: 310px;
 }
 
 .nav-section {
@@ -122,6 +150,16 @@ body {
     font-weight: bold;
 }
 
+.mobile-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--system-color);
+    height: 43px;
+    align-items: center;
+    font-weight: bold;
+}
+
 .controls > div {
     width: 33%;
 }
@@ -154,6 +192,27 @@ body {
     border-radius: 10px;
     height: 36px;
     width: 300px;
+    font-size: 17px;
+    padding-left: 30px;
+}
+
+.mobile-search-bar-container {
+    width: 95%;
+    position: relative;
+}
+
+.mobile-search-bar-container > i {
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    color: #acabab;
+}
+
+.mobile-search-bar {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
     font-size: 17px;
     padding-left: 30px;
 }
@@ -215,12 +274,27 @@ body {
     cursor: pointer;
 }
 
-.pizza-card:hover {
+.mobile-pizza-card {
+    width: 100%;
+    height: 312px;
+    background-color: var(--surface-color);
+    filter: drop-shadow(0px 5px 4px #acabab);
+    cursor: pointer;
+}
+
+.mobile-pizza-card > div > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pizza-card:hover,
+.mobile-pizza-card:hover {
     transform: scale(1.02);
     transition: 0.1s ease-in-out;
 }
 
-.pizza-card-contents:active {
+.pizza-card-contents:active,
+.mobile-pizza-card-contents:active {
     opacity: 70%;
 }
 
@@ -239,12 +313,29 @@ body {
     filter: drop-shadow(0px 5px 4px #acabab);
 }
 
-.pizza-add-card:hover {
+.mobile-pizza-add-card {
+    width: 100%;
+    height: 312px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #acabab;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5a727a;
+    cursor: pointer;
+    background-color: var(--primary-50-color);
+    filter: drop-shadow(0px 5px 4px #acabab);
+}
+
+.pizza-add-card:hover,
+.mobile-pizza-add-card:hover {
     transition: 0.1s ease-in-out;
     transform: scale(1.02);
 }
 
-.pizza-add-card:active {
+.pizza-add-card:active,
+.mobile-pizza-add-card:active {
     background-color: #9edef1;
 }
 
@@ -266,14 +357,39 @@ body {
     z-index: 100;
 }
 
-.trash-icon:hover {
+.mobile-trash-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    border: 7px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.trash-icon:hover,
+.mobile-trash-icon:hover {
     transition: 0.1s ease-in-out;
     transform: scale(1.1);
     color: var(--secondary-color);
 }
 
-.trash-icon:active {
+.trash-icon:active,
+.mobile-trash-icon:active {
     color: red;
+}
+
+.mobile-control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--system-color);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -282,5 +398,8 @@ body {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
+    .welcome-message {
+        display: none;
+    }
 }

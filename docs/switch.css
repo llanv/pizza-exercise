@@ -6,7 +6,24 @@
     background-color: var(--primary-50-color);
 }
 
+.mobile-switch {
+    display: flex;
+    width: 95%;
+    height: 52px;
+    border-radius: 10px;
+    background-color: var(--primary-50-color);
+}
+
 .switch > button {
+    flex-grow: 1;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mobile-switch > button {
     flex-grow: 1;
     border-radius: 10px;
     border: none;
