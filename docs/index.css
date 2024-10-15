@@ -311,6 +311,7 @@ body {
     background-color: var(--surface-color);
     filter: drop-shadow(0px 5px 4px #acabab);
     cursor: pointer;
+    z-index: 499;
 }
 
 .mobile-pizza-card > div > img {
@@ -396,7 +397,7 @@ body {
     border: 7px solid #ffffff;
     background-color: #ffffff;
     border-radius: 10px;
-    z-index: 100;
+    z-index: 500;
 }
 
 .trash-icon:hover,
