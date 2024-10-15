@@ -21,7 +21,7 @@ body {
     background-color: var(--base-color);
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-around;
     background-color: var(--system-color);
@@ -36,7 +36,6 @@ nav {
     max-width: 1280px;
     padding: 50px;
     gap: 31px;
-    margin-top: 31px;
 }
 
 .nav-section {
@@ -168,7 +167,7 @@ nav {
     position: relative;
 }
 
-.fa-magnifying-glass {
+.search-bar-container > i {
     position: absolute;
     left: 9px;
     top: 9px;
@@ -208,12 +207,6 @@ nav {
     width: 100%;
 }
 
-@media only screen and (max-width: 1380px) {
-    .pizza-cards {
-        justify-content: center;
-    }
-}
-
 .pizza-card {
     width: 231px;
     height: 312px;
@@ -225,9 +218,6 @@ nav {
 .pizza-card:hover {
     transform: scale(1.02);
     transition: 0.1s ease-in-out;
-}
-
-.pizza-card-contents {
 }
 
 .pizza-card-contents:active {
@@ -284,4 +274,13 @@ nav {
 
 .trash-icon:active {
     color: red;
+}
+
+@media only screen and (max-width: 1380px) {
+    .pizza-cards {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
 }
