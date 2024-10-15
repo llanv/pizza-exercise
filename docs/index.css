@@ -48,6 +48,22 @@ body {
     width: 100%;
 }
 
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--system-color);
+    height: 75px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.mobile-profile-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 4px solid var(--secondary-color);
+}
+
 .content-area {
     display: flex;
     flex-direction: column;
@@ -73,11 +89,21 @@ body {
     width: 33%;
 }
 
+.mobile-nav-section {
+    display: flex;
+    align-items: center;
+}
+
 .logo-section {
     margin-left: 50px;
     display: flex;
     justify-content: left;
     cursor: pointer;
+}
+
+.mobile-logo-section {
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 .welcome-section {
@@ -90,6 +116,11 @@ body {
     display: flex;
     justify-content: right;
     cursor: pointer;
+}
+
+.mobile-profile-section {
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 .pointer {
